@@ -64,6 +64,7 @@ function submitWord() {
   }
   document.getElementById('score').textContent = `Score for '${word}': ${wordScore}`;
   document.getElementById('word-setup').style.display = 'none';
+  document.getElementById('result').style.display = 'block';
   document.getElementById('play-again').style.display = 'block';
 }
 
@@ -76,5 +77,6 @@ function playAgain() {
   document.getElementById('game-setup').style.display = 'block';
   document.getElementById('letter-setup').style.display = 'none';
   document.getElementById('word-setup').style.display = 'none';
+  document.getElementById('result').style.display = 'none';
   document.getElementById('play-again').style.display = 'none';
 }
